@@ -96,3 +96,8 @@ let duplciate count = function
      | [] -> []
      | h :: t -> if count == 1 then h :: duplciate count t
                  else 
+
+(* Remove the K'th element from a list. (easy) *)
+rec remove_at n = function
+  | [] -> []
+  | h :: t -> if n == 0 then t else h :: remove_at (n-1) t;;
