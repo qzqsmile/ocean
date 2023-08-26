@@ -1,6 +1,6 @@
 (** working on lists *)
 
-(** get the last element list  *)
+(** 1. get the last element list  *)
 
 let rec last = function
     | [] -> None
@@ -11,7 +11,7 @@ last ["a" ; "b" ; "c" ; "d"];;
 
 last [];;
 
-(** get the last two elements list  *)
+(** 2. get the last two elements list  *)
 
 
 let rec last_two = function 
@@ -21,7 +21,7 @@ let rec last_two = function
 
 last_two ["a"; "b"; "c"; "d"];;
 
-
+(* 3. Find the K'th element of a list. (easy) *)
 let rec at k = function
     | [] -> None
     | h :: t -> if k = 1 then Some t else at (k - 1) t;;
@@ -29,7 +29,7 @@ let rec at k = function
 
 at 3 ["a"; "b"; "c"; "d"];;
 
-(* Find the number of elements of a list. (easy) *)
+(* 4. Find the number of elements of a list. (easy) *)
 
 let rec length = function
     | [] -> 0
@@ -38,24 +38,23 @@ let rec length = function
 
 length [1;2;3;4;5];;
 
-(* Reverse a list. (easy) *)
-
-
+(* 5. Reverse a list. (easy) *)
 let rev list =
   let rec aux acc = function
     | [] -> acc
     | h :: t -> aux (h :: acc) t in
   aux [] list;;
 
-let reverse_list lst =
-  let rec aux acc = function
-    | [] -> lst
-    | hd :: tl -> aux (hd :: acc) tl in
-  aux [] lst;;
-
-reverse_list [1;2;3;4];;
+rev [1;2;3;4];;
 
 
+let rec myrev = function
+  | [] -> []
+  | h :: t -> myrev t @ [h];;
+  
+myrev [1;2;3];;
+
+(* 6. Find out whether a list is a palindrome. (easy) *)
 let is_palindrome list =
   (* One can use either the rev function from the previous problem, or the built-in List.rev *)
   list = List.rev list;;
