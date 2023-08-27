@@ -4,6 +4,9 @@ type bool_expr =
     | And of bool_expr * bool_expr
     | Or of bool_expr * bool_expr;;
 
+
+(* 46 & 47. Truth tables for logical expressions (2 variables). (medium) *)
+
 let rec eval2 a val_a b val_b = function
     | Var x -> if x = a then val_a
                else if x = b then val_b
@@ -19,6 +22,7 @@ let rec eval2 a val_a b val_b = function
 
 table2 "a" "b" (And (Var "a", Or (Var "a", Var "b")));;
 
+(* 48. Truth tables for logical expressions. (medium) *)
 
 (* 49. Gray code. (medium) *)
 let rec gray n = function
