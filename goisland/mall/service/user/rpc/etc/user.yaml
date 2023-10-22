@@ -1,5 +1,6 @@
 Name: user.rpc
-ListenOn: 0.0.0.0:8080
+ListenOn: 0.0.0.0:9000
+
 Etcd:
   Hosts:
     - etcd:2379
@@ -12,15 +13,3 @@ CacheRedis:
   - Host: redis:6379
     Type: node
     Pass:
-
-Salt: HWVOFkGgPTryzICwd7qnJaZR9KQ2i8xe
-
-Auth:
-  AccessSecret: uOvKLmVfztaXGpNYd4Z0I1SiT7MweJhl
-  AccessExpire: 86400
-
-UserRpc:
-  Etcd:
-    Hosts:
-      - etcd:2379
-    Key: user.rpc
