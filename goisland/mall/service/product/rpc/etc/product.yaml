@@ -1,9 +1,9 @@
 Name: product.rpc
-ListenOn: 0.0.0.0:9001
+ListenOn: 0.0.0.0:9011
 
 Etcd:
   Hosts:
-    - etcd:2379
+    - 127.0.0.1:2379
   Key: product.rpc
 
 Mysql:
