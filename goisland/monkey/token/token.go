@@ -17,7 +17,6 @@ func LookupIdent(ident string) TokenType {
 const (
 	TRUE   = "TRUE"
 	FALSE  = "FALSE"
-	IF     = "IF"
 	ELSE   = "ELSE"
 	RETURN = "RETURN"
 
@@ -25,8 +24,9 @@ const (
 	EOF     = "EOF"
 
 	// Identifiers + literals
-	IDENT = "IDENT" // add, foobar, x, y, ...
-	INT   = "INT"   // 1343456
+	IDENT  = "IDENT"  // add, foobar, x, y, ...
+	INT    = "INT"    // 1343456
+	STRING = "String" // "x", "y"
 
 	// Operators
 	ASSIGN = "="
@@ -35,15 +35,19 @@ const (
 	// Delimiters
 	COMMA     = ","
 	SEMICOLON = ";"
+	COLON     = ":"
 
 	LPAREN = "("
 	RPAREN = ")"
 	LBRACE = "{"
 	RBRACE = "}"
+	LBRACK = "["
+	RBRACK = "]"
 
 	// Keywords
 	FUNCTION = "FUNCTION"
 	LET      = "LET"
+	IF       = "IF"
 
 	MINUS    = "-"
 	BANG     = "!"
