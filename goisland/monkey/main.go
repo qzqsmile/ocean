@@ -7,6 +7,10 @@ import (
 	"os/user"
 )
 
+// todo
+// len("1234")
+// len("Hello World!")
+
 func main() {
 	user, err := user.Current()
 	if err != nil {
