@@ -8,6 +8,8 @@ import (
 	"monkey/object"
 )
 
+//frame？
+
 const StackSize = 2048
 const GlobalSize = 65536
 const MaxFrames = 1024
