@@ -1,8 +1,8 @@
 package vm
 
 import (
-	"github.com/kitasuke/monkey-go/code"
-	"github.com/kitasuke/monkey-go/object"
+	"monkey/code"
+	"monkey/object"
 )
 
 type Frame struct {

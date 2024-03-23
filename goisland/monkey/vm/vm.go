@@ -3,9 +3,9 @@ package vm
 import (
 	"fmt"
 
-	"github.com/kitasuke/monkey-go/code"
-	"github.com/kitasuke/monkey-go/compiler"
-	"github.com/kitasuke/monkey-go/object"
+	"monkey/code"
+	"monkey/compiler"
+	"monkey/object"
 )
 
 const StackSize = 2048
