@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/kitasuke/monkey-go/ast"
-	"github.com/kitasuke/monkey-go/compiler"
-	"github.com/kitasuke/monkey-go/lexer"
-	"github.com/kitasuke/monkey-go/object"
-	"github.com/kitasuke/monkey-go/parser"
+	"monkey/ast"
+	"monkey/compiler"
+	"monkey/lexer"
+	"monkey/object"
+	"monkey/parser"
 )
 
 type vmTestCase struct {

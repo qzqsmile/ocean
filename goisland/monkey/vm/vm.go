@@ -3,10 +3,12 @@ package vm
 import (
 	"fmt"
 
-	"github.com/kitasuke/monkey-go/code"
-	"github.com/kitasuke/monkey-go/compiler"
-	"github.com/kitasuke/monkey-go/object"
+	"monkey/code"
+	"monkey/compiler"
+	"monkey/object"
 )
+
+//frame？
 
 const StackSize = 2048
 const GlobalSize = 65536
