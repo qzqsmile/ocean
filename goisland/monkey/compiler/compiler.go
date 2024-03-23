@@ -9,6 +9,10 @@ import (
 	"monkey/object"
 )
 
+// > 顺序问题
+// if的解释
+// 函数的及时
+
 type Compiler struct {
 	instructions        code.Instructions
 	constants           []object.Object
