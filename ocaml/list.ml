@@ -276,7 +276,8 @@ in List.rev (aux count [] list) *)
 (* Extract a Given Number of Randomly Selected Elements From a List Intermediate *)
 (* rand_select ["a"; "b"; "c"; "d"; "e"; "f"; "g"; "h"] 3;; *)
 let rand_select list n = 
-  Random.init 0;
+  Random.self_init ();
+  (* Random.init 0; *)
   let rec extract k acc= function 
   | [] -> []
   | h::t  -> 
@@ -300,7 +301,7 @@ let rand_select list n =
 (* let permutation ["a"; "b"; "c"; "d"; "e"; "f"];; *)
 
 let permutation list = rand_select list (List.length list);;
-permutation ["a"; "b"; "c"; "d"; "e"; "f"]
+permutation ["a"; "b"; "c"; "d"; "e"; "f"];;
 (* let permutation list = rand_select list (List.length list) *)
 
 
