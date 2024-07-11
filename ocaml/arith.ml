@@ -88,3 +88,10 @@ let goldbach num =
   (* type 'b rle =
   | One of 'b
   | Many of int * 'b;; *)
+
+  let sum_list lst =
+    List.fold_left (fun acc x -> acc + x ) 0 lst
+  ;;
+  
+  let numbers = [1; 2; 3; 4; 5];
+  let total = sum_list numbers;;
